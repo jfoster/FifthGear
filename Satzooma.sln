@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.452
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifthGear", "FifthGear.csproj", "{2CEAE666-CBA5-4FA6-AEE3-D6C5CFB2DE20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Satzooma", "Satzooma.csproj", "{2CEAE666-CBA5-4FA6-AEE3-D6C5CFB2DE20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2453F72E-7482-4B37-AEF5-3235A12DFD39}
+		SolutionGuid = {11D0D7C3-8B4F-4BF6-A0A6-70A3327BCCD1}
 	EndGlobalSection
 EndGlobal

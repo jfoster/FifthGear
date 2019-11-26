@@ -7,8 +7,8 @@
     <ProjectGuid>{2CEAE666-CBA5-4FA6-AEE3-D6C5CFB2DE20}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Rave.FifthGear</RootNamespace>
-    <AssemblyName>FifthGear</AssemblyName>
+    <RootNamespace>Satzooma</RootNamespace>
+    <AssemblyName>Satzooma</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
@@ -48,18 +50,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FifthGearMod.cs" />
+    <Compile Include="Satzooma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if "$(ConfigurationName)" == "Debug" (
-copy "$(TargetPath)" "G:\Steam\steamapps\common\My Summer Car\Mods" /y
-copy "$(TargetDir)$(TargetName).pdb" "G:\Steam\steamapps\common\My Summer Car\Mods" /y
-cd "G:\Steam\steamapps\common\My Summer Car\Mods"
-call "G:\Steam\steamapps\common\My Summer Car\Mods\debug.bat"
-) ELSE (
-copy "$(TargetPath)" "G:\Steam\steamapps\common\My Summer Car\Mods" /y
-)</PostBuildEvent>
+    <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "G:\Steam\steamapps\common\My Summer Car\Mods\$(ProjectName).dll"</PostBuildEvent>
   </PropertyGroup>
 </Project>

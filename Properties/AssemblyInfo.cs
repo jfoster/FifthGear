@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FifthGear")]
+[assembly: AssemblyTitle("Satzooma")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Rave")]
-[assembly: AssemblyProduct("FifthGear")]
+[assembly: AssemblyCompany("jfoster")]
+[assembly: AssemblyProduct("Satzooma")]
 [assembly: AssemblyCopyright("Copyright © 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a3389349-ce37-4b2d-a781-588ab5d8823b")]
+[assembly: Guid("de6d41eb-1c83-41d3-9d2b-1f0e9e413e65")]
 
 // Version information for an assembly consists of the following four values:
 //
